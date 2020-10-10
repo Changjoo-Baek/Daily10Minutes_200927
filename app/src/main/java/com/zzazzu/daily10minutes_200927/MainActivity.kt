@@ -40,13 +40,18 @@ class MainActivity : BaseActivity() {
 
                     if (codeNum == 200) {
 
+//                        응용문제 : 로그인 성공시 로그인한 사용자의 닉네임 토스트 출력
+//                        json > data . user> nick_name 추출
+
                     }
                     else {
 //                        로그인 실패 => 토스트로 로그인 실패 안내.
 //                        토스트 : UI 동작 -> UI Thread가 실행하도록 해야 함.
 
+//                        연습문제 : 로그인 실패시 실패 사유를 서버가 알려주는 이유로 출력.
+
                         runOnUiThread {
-                            Toast.makeText(mContext, "로그인 실패", Toast.LENGTH_SHORT)
+                            Toast.makeText(mContext, "로그인 실패", Toast.LENGTH_SHORT).show()
                         }
 
                     }

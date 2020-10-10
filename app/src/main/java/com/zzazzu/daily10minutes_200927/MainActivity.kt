@@ -24,9 +24,11 @@ class MainActivity : BaseActivity() {
 
 // inputid 통해 받은 텍스트를 스트링으로 바꾸자라는 내
             val inputId = idEdt.text.toString()
-            val inputId = pwEdt.text.toString()
+            val inputpw = pwEdt.text.toString()
 
+// 서버 유틸을 이용해서 실제 로그인 시도
 
+            ServerUtil.postRequestLogin(inputId, inputpw)
         }
 
 
